@@ -14,21 +14,21 @@ export const Reasons = () => {
                <span className="outline-text">
                   Why</span>
                <span>
-                    choose us?</span>
+                  choose us?</span>
             </div>
 
             <div className="details-r">
                <div>
                   <img src="badge-check.png" alt=""></img>
                   <span>
-                  OVER +140 EXPERT COACHES
+                     OVER +140 EXPERT COACHES
                   </span>
                </div>
                <div>
                   <img src="badge-check.png" alt=""/>
-               <span>
-                  TRAIN SMARTER AND FASTER THAN BEFORE
-               </span>
+                  <span>
+                     TRAIN SMARTER AND FASTER THAN BEFORE
+                  </span>
                </div>
                <div>
                   <img src="badge-check.png" alt=""/>
@@ -44,15 +44,15 @@ export const Reasons = () => {
                </div>
             </div>
 
-         <span>OUR PARTNER</span>
-         <div className="partners">
-            <img src="adidas.png" alt="" />
-            <img src="nb.png" alt="" />
-            <img src="nike.png" alt="" />
+            <span>OUR PARTNER</span>
+            <div className="partners">
+               <img src="adidas.png" alt=""/>
+               <img src="nb.png" alt=""/>
+               <img src="nike.png" alt=""/>
             </div>
          </div>
 
-         
+
       </div>
    )
 }

@@ -2,7 +2,7 @@ export default [
   {
     icon: "dumbell.svg",
     name: "BASIC PLAN",
-    price: "25",
+    price: "59",
     features: [
       "2 hours of excercises",
       "Free consultaion to coaches",
@@ -12,7 +12,7 @@ export default [
   {
     icon: "flame.svg",
     name: "PREMIUM PLAN",
-    price: "30",
+    price: "65",
     features: [
       "5 hour of excercises",
       "Free consultaion of Coaches",
@@ -22,7 +22,7 @@ export default [
   {
     icon: "heartHealth.svg",
     name: "PRO PLAN",
-    price: "45",
+    price: "55",
     features: [
       "8 hours of excercises",
       "Consultation of Private Coach",

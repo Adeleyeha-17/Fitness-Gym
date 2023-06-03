@@ -17,8 +17,7 @@ export const Programs = () => {
             <span>Plan</span>
          </div>
          <div className="cards">
-            {catCards} 
-            </div>
+            {catCards} </div>
       </div>
 
    )

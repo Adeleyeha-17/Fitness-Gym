@@ -19,12 +19,16 @@ export const Hero = () => {
 
             <div className="hero-text">
                <div>
-                  
+
                   <span>WE HELP PEOPLE</span>
                </div>
 
                <div>
-                  <span> REACH THEIR <span className="outline-text">FITNESS </span> GOALS</span>
+                  <span>
+                     REACH THEIR
+                     <span className="outline-text">FITNESS
+                     </span>
+                     GOALS</span>
                </div>
 
                <div>
@@ -52,40 +56,38 @@ export const Hero = () => {
 
             {/* Hero Buttons */}
 
-          <div className="hero-btns">
-            <a href="#">Get Started</a>
-            <a href="#">Learn More</a>
-          </div>
+            <div className="hero-btns">
+               <a href="#">Get Started</a>
+               <a href="#">Learn More</a>
+            </div>
 
          </div>
 
-          
+
          <div className="right-h">
 
-          {/* Hero Buttons */}
+            {/* Hero Buttons */}
 
             <div className="hero-btns">
-              <a href="#">Join Now</a>
+               <a href="#">Join Now</a>
             </div>
 
-          {/* Heart Rate Card */}
+            {/* Heart Rate Card */}
             <div className="heart-rate">
-              <img src="fi-sr-heart.svg" alt="" />
-              <span>Heart Rate</span>
-              <span>168 bpm</span>
+               <img src="fi-sr-heart.svg" alt=""/>
+               <span>Heart Rate</span>
+               <span>168 bpm</span>
             </div>
-            
-            {/* Hero Images */}
-            <img src="hero-img.png" alt="" className="hero-img" />
-            <img src="hero_image_back.png" alt="" className="hero-img-bg" />
 
-            {/* Calories Card */}
+            {/* Hero Images */}
+            <img src="hero-img.png" alt="" className="hero-img"/>
+            <img src="hero_image_back.png" alt="" className="hero-img-bg"/> {/* Calories Card */}
             <div className="calories">
-              <img src="calories.svg" alt="" />
-              <div>
-                <span>Calories Burned</span>
-                <span>220 kcal</span>
-              </div>
+               <img src="calories.svg" alt=""/>
+               <div>
+                  <span>Calories Burned</span>
+                  <span>220 kcal</span>
+               </div>
             </div>
          </div>
       </div>
