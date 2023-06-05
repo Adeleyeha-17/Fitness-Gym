@@ -635,6 +635,7 @@
    display: flex;
    padding: 0 2rem;
    gap: 1rem;
+   position: relative;
 }
 
 .left-t {
@@ -681,4 +682,136 @@
 .testimonial-card span:nth-child(2) {
    color: white;
    font-size: 16px;
+}
+
+.right-t .testimonial-img {
+   position: absolute;
+   width: 17rem;
+   height: 20rem;
+   object-fit: cover;
+   right: 8rem;
+   top: 2rem;
+}
+
+.right-t div:nth-child(1){
+   position: absolute;
+   width: 17rem;
+   height: 20rem;
+   border: 2px solid var(--green);
+   background-color: transparent;
+   right: 9rem;
+   top: 0.9rem;
+}
+
+.right-t div:nth-child(2){
+   position: absolute;
+   width: 17rem;
+   height: 19rem;
+   background: var(--plansCard);
+   right: 7rem;
+   top: 4rem;
+}
+
+.arrows {
+   position: relative;
+   bottom: -21rem;
+   left: 9rem;
+   display: flex;
+   gap: 1rem;
+}
+
+.arrows img {
+   height: 1.5rem;
+   width: 1.5rem;
+   cursor: pointer;
+}
+
+/* Join Components */
+
+.join {
+   display: flex;
+   padding: 0 2rem;
+   gap: 10rem;
+}
+
+.left-j {
+   color: white;
+   position: relative;
+   text-transform: uppercase;
+   font-size: 3rem;
+   font-weight: bold;
+}
+
+.left-j div {
+   display: flex;
+   gap: 1rem;
+}
+
+.left-j hr {
+   position: absolute;
+   top: -2rem;
+   border: 2px solid var(--green);
+   border-radius: 20%;
+   width: 10.5rem;
+}
+
+.right-j {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.join-form {
+   display: flex;
+   gap: 1rem;
+background: gray;
+padding: 1.5rem 2rem;
+border-radius: 5px;
+}
+
+.join-form input {
+   background: transparent;
+   outline: none;
+   border: none;
+   color: var(--lightgray);
+}
+
+::placeholder {
+   color: var(--lightgray);
+}
+
+.btn-div {
+   background: var(--green);
+   color: white;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   height: 30px;
+   width: 90px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+   border-radius: 5px;
+}
+
+.join-btn:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 0;
+   background: white;
+   transition: all .5s ease-in-out;
+   z-index: -1;
+}
+
+.join-btn:hover::before {
+   width: 100%;
+}
+
+.join-btn:hover {
+   color: var(--green);
 }
