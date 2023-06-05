@@ -908,6 +908,31 @@ border-radius: 5px;
 
 
 @media screen and (max-width: 768px) {
+
+   .header:nth-child(2) {
+      position: fixed;
+      right: 2rem;
+      z-index: 1500;
+   }
+
+   .header .header-menu {
+      flex-direction: column;
+      background-color: var(--appColor);
+      padding: 2rem;
+   }
+
+   .bar-div {
+      background: var(--appColor);
+      padding: 0.5rem;
+      border-radius: 5px;
+   }
+
+   .bars {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: 0.4rem;
+   }
+
    .hero {
       flex-direction: column;
       margin-bottom: 10rem;
@@ -1135,6 +1160,30 @@ border-radius: 5px;
 
 /* Join components */
 
+.join {
+   flex-direction: column;
+   margin-top: -3.5rem;
+}
 
+.left-j {
+   display: inline-block;
+   font-size: 1.5rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.left-j div {
+   display: inline-block;
+}
+
+.left-j hr {
+   position: absolute;
+   top: -2rem;
+   width: 6.8rem;
+}
+
+.join-form {
+   margin-top: -16rem;
+}
 
 }

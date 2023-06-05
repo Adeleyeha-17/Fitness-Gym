@@ -10,7 +10,9 @@ export const Hero = () => {
 
             {/* Header Component */}
 
-            <Header/> {/* Ads Section */}
+            <Header/> 
+            
+            {/* Ads Section */}
 
             <div className="ads">
                <motion.div          
