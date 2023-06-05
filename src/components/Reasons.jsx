@@ -10,7 +10,7 @@ export const Reasons = () => {
          <div className="right-r">
             <span>Some reasons</span>
 
-            <div>
+            <div className="reason-flex">
                <span className="outline-text">
                   Why</span>
                <span>

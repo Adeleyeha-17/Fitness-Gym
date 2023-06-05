@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Join } from "./components/Join";
 import { Plans } from "./components/Plans";
@@ -21,7 +22,7 @@ export default function App() {
 
         <Join />
 
-
+        <Footer />
     </div>
   );
 }

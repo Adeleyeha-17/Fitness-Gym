@@ -131,9 +131,9 @@
 .hero-text div:nth-of-type(3) {
    font-size: 1rem;
    letter-spacing: 1px;
-   font-weight: 200px;
+   font-weight: 200;
    text-transform: none;
-   width: 80%;
+   width: 68%;
    z-index: 10;
 }
 
@@ -317,6 +317,7 @@
 /* Programs Components */
 
 .programs {
+   position: relative;
    display: flex;
    flex-direction: column;
    gap: 2rem;
@@ -542,6 +543,7 @@
    flex-direction: column;
    gap: 4rem;
    padding: 0 2rem;
+   position: relative;
 }
 
 .plans-card {
@@ -814,4 +816,325 @@ border-radius: 5px;
 
 .join-btn:hover {
    color: var(--green);
+}
+
+
+/* Footer Component */
+
+.footer-container {
+   position: relative;
+}
+
+.footer-container hr {
+   border: 1px solid var(--green);
+}
+
+.footer {
+   padding: 1rem 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   justify-content: center;
+   align-items:center;
+   height: 10rem;
+}
+
+.footer-links {
+   display: flex;
+   gap: 4rem;
+}
+
+.footer-links img {
+   width: 2rem;
+   height: 2rem;
+   cursor:pointer;
+}
+
+.logo-f img {
+   width: 10rem;
+   margin-left: 5rem;
+}
+
+
+/* Blur effect */
+
+.blur {
+   background: #25d366;
+   border-radius: 50%;
+   position: absolute;
+   left: 0;
+   filter: blur(150px);
+   z-index: -10;
+}
+
+.blur-hero {
+   width: 20rem;
+   height: 30rem;
+}
+
+.blur-plans-1 {
+   width: 20rem;
+   height: 10rem;
+   left: 0rem;
+   top: 6rem;
+}
+
+.blur-plans-2 {
+   width: 20rem;
+   height: 10rem;
+   position: absolute;
+   top: 10rem;
+   left: 60rem;
+}
+
+.blur-footer-1 {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 32rem;
+   height: 3rem;
+   background: var(--green);
+   filter: blur(200px);
+}
+
+.blur-footer-2 {
+   bottom: 0;
+   left: 15%;
+   width: 32rem;
+   height: 3rem;
+   background: orange;
+   filter: blur(200px);
+}
+
+
+@media screen and (max-width: 768px) {
+   .hero {
+      flex-direction: column;
+      margin-bottom: 10rem;
+   }
+
+   .blur-hero {
+      width: 12rem;
+   }
+
+   .ads {
+      margin-top: 0;
+      align-items: center;
+      transform: scale(0.8);
+   }
+
+   .hero-text {
+      font-size: 1.1rem;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .hero-text div:nth-of-type(3) {
+   font-size: small;
+   letter-spacing: 1px;
+   font-weight: 200;
+   text-align: center;
+}
+
+.member-figures div span:nth-of-type(1) {
+   font-size: large;
+   
+}
+
+.member-figures div span:nth-of-type(2) {
+   font-size: small;
+}
+
+.member-figures{
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+/* Hero buttons */
+
+.buttons {
+   display: flex;
+   justify-content: center;
+}
+
+.join-now {
+   display: none;
+}
+
+
+/* Right Hero Section */
+
+.right-h {
+   position: relative;
+   background: none;
+   top: -6rem;
+}
+
+.heart-rate {
+   left: 1rem;
+   top: 7rem;
+}
+
+.hero-img {
+   position: relative;
+   width: 26rem;
+   left: 5rem;
+   top: 4rem;
+   z-index: 100;
+}
+
+.hero-img-bg {
+   top: 4rem;
+   left: 2rem;
+   width: 13rem;
+   z-index: 2;
+}
+
+/* Calories card */
+.calories {
+   position: relative;
+   left: 1rem;
+   top: -15rem;
+}
+
+.calories img {
+   width: 2rem;
+}
+
+.calories div span:nth-of-type(2) {
+   font-size: 0.9rem;
+}
+
+/* Programs components */
+
+.program-header {
+   flex-direction: column;
+   gap: 1rem;
+   font-size: 2rem;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+}
+
+/* Categories */
+
+.cards {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   gap: 1rem;
+}
+
+/* Reason components */
+
+.reasons {
+   flex-direction: column;
+   margin-top: -2rem;
+   margin-bottom: 5rem;
+}
+
+.reason-flex {
+   display: flex;
+   flex-direction: column;
+}
+
+.left-r {
+   grid-auto-rows: auto;
+   overflow: hidden;
+}
+
+.left-r img:nth-child(1) {
+   width: 7rem;
+   height: 17rem;
+}
+
+.left-r img:nth-child(2) {
+   width: 15rem;
+   height: 10rem;
+}
+
+.left-r img:nth-child(3) {
+   width: 7rem;
+ 
+}
+
+.left-r img:nth-child(4) {
+   width: 7rem;
+   height: 6rem;
+}
+
+.details-r div img {
+   width: 1rem;
+}
+
+/* Plans components */
+.plans-card {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.plan-card:nth-child(2) {
+   transform: none;
+}
+
+.plan-card {
+   height: 18 rem;
+   width: 13rem;
+}
+
+/* Testimonial component */
+
+.testimonials {
+   flex-direction: column;
+   top: -2.5rem;
+}
+
+.right-t {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.right-t div {
+   position: relative;
+   display: none;
+}
+
+.right-t .testimonial-img {
+   position: relative;
+   right: 0;
+   top: 0;
+}
+
+.left-t span:nth-child(1) {
+   font-weight: normal;
+}
+
+.left-t span:nth-child(2),
+.left-t span:nth-child(3) {
+   font-size: 2rem;
+}
+
+.right-t div:last-child img {
+   margin-left: 1rem;
+}
+
+.right-t div:last-child {
+   display:block;
+   bottom: 0;
+   left: 0;
+}
+
+/* Join components */
+
+
+
 }

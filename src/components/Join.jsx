@@ -26,3 +26,6 @@ export const Join = () => {
     </div>
   )
 }
+
+
+// Try to implement the send email later on

@@ -7,6 +7,7 @@ export const Plans = () => {
 
    return (
       <div className="plans-container">
+         <div className="blur blur-plans-1"></div>
          <div className="program-header">
             <span>READY TO START</span>
             <span>YOUR JOURNEY</span>
@@ -16,6 +17,7 @@ export const Plans = () => {
          {/* Plans Cards */}
          <div className="plans-card">
             {plansCard} </div>
+            <div className="blur blur-plans-2"></div>
       </div>
    )
 }

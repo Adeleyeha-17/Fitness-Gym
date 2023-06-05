@@ -1,8 +1,11 @@
 import {Header} from "./Header";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
+   const transition = {type: 'spring', duration: 3}
    return (
       <div className="hero">
+         <div className="blur blur-hero"></div>
          <div className="left-h">
 
             {/* Header Component */}
@@ -10,7 +13,11 @@ export const Hero = () => {
             <Header/> {/* Ads Section */}
 
             <div className="ads">
-               <div></div>
+               <motion.div          
+               initial = {{ left: "178px"}}
+               whileInView = {{left: "8px"}}
+               transition ={{...transition, type: "tween"}}
+></motion.div>
                <span>We care about your fitness</span>
             </div>
 
@@ -26,13 +33,11 @@ export const Hero = () => {
                <div>
                   <span>
                      REACH THEIR
-                     <span className="outline-text">FITNESS
-                     </span>
-                     GOALS</span>
+                     <span className="outline-text"> FITNESS </span> GOALS</span>
                </div>
 
                <div>
-                  <span></span>
+                  <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa labore odio earum autem, amet sit placeat modi atque eius illum recusandae vero voluptatem rerum asperiores est voluptas commodi, obcaecati quod.</span>
                </div>
             </div>
 
@@ -56,10 +61,13 @@ export const Hero = () => {
 
             {/* Hero Buttons */}
 
+            <div className="buttons">
             <div className="hero-btns">
                <a href="#">Get Started</a>
                <a href="#">Learn More</a>
             </div>
+            </div>
+            
 
          </div>
 
@@ -68,27 +76,38 @@ export const Hero = () => {
 
             {/* Hero Buttons */}
 
-            <div className="hero-btns">
+            <div className="hero-btns join-now">
                <a href="#">Join Now</a>
             </div>
 
             {/* Heart Rate Card */}
-            <div className="heart-rate">
+            <motion.div
+            transition={{...transition, type: "tween"}}
+            initial= {{right: "1rem"}}
+            whileInView={{right: "4rem"}} className="heart-rate">
                <img src="fi-sr-heart.svg" alt=""/>
                <span>Heart Rate</span>
                <span>168 bpm</span>
-            </div>
+            </motion.div>
 
             {/* Hero Images */}
             <img src="hero-img.png" alt="" className="hero-img"/>
-            <img src="hero_image_back.png" alt="" className="hero-img-bg"/> {/* Calories Card */}
-            <div className="calories">
+            <motion.img 
+               initial = {{ right: "11rem"}}
+               whileInView = {{right: "23rem"}}
+               transition ={{...transition}} src="hero_image_back.png" alt="" className="hero-img-bg"/> {/* Calories Card */}
+            
+            <motion.div 
+            initial = {{ right: "37rem"}}
+            whileInView = {{right: "28rem"}}
+            transition ={{...transition, type: "tween"}}
+            className="calories">
                <img src="calories.svg" alt=""/>
                <div>
                   <span>Calories Burned</span>
                   <span>220 kcal</span>
                </div>
-            </div>
+            </motion.div>
          </div>
       </div>
    )
