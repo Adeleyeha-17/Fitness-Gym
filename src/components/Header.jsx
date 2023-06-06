@@ -8,17 +8,26 @@ export const Header = () => {
       <div className="header">
          <img src="logo.svg" alt="" className="logo"/>
 
+
+
+<div>
 {(mobileScreen === true && openMenu === false) ? (
    <div className="bar-div" onClick={() => setOpenMenu(true)}>
       <img src="bars.png" alt="" className="bars"/>
    </div>
 ) :  <ul className="header-menu">
-<li onClick={() => setOpenMenu(false)}>Home</li>
+<li>
+   <Link onClick={() => setOpenMenu(false)}
+   to = "header"
+   spy={true}
+   smooth ={true}>Home</Link>
+   </li>
 <li onClick={() => setOpenMenu(false)}>Programs</li>
 <li onClick={() => setOpenMenu(false)}>Plans</li>
 <li onClick={() => setOpenMenu(false)}>Testimonial</li>
 <li onClick={() => setOpenMenu(false)}>Why us</li>
 </ul>}
+</div>
       </div>
    )
 }

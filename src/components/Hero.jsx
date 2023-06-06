@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
    const transition = {type: 'spring', duration: 3}
    return (
-      <div className="hero">
+      <div className="hero" id="header">
          <div className="blur blur-hero"></div>
          <div className="left-h">
 
@@ -39,7 +39,7 @@ export const Hero = () => {
                </div>
 
                <div>
-                  <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa labore odio earum autem, amet sit placeat modi atque eius illum recusandae vero voluptatem rerum asperiores est voluptas commodi, obcaecati quod.</span>
+                  <span>Our ultimate objective is to make you feel happier and better. Decrease your stress levels and live a  healthier productive life with our regimes</span>
                </div>
             </div>
 

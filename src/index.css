@@ -909,7 +909,7 @@ border-radius: 5px;
 
 @media screen and (max-width: 768px) {
 
-   .header:nth-child(2) {
+   .header div{
       position: fixed;
       right: 2rem;
       z-index: 1500;
@@ -919,6 +919,8 @@ border-radius: 5px;
       flex-direction: column;
       background-color: var(--appColor);
       padding: 2rem;
+      margin-bottom: -16rem;
+      
    }
 
    .bar-div {
