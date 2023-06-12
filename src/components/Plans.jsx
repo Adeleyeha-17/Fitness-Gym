@@ -6,7 +6,7 @@ export const Plans = () => {
    const plansCard = data.map(items => <PlansCard item={items}/>)
 
    return (
-      <div className="plans-container">
+      <div className="plans-container" id="plan">
          <div className="blur blur-plans-1"></div>
          <div className="program-header">
             <span>READY TO START</span>

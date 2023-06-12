@@ -10,7 +10,7 @@ export const Testimonial = () => {
    const dataLength = data.length;
 
    return (
-      <div className="testimonials">
+      <div className="testimonials" id="testimonial">
          <div className="left-t">
             <span>Testimonial</span>
             <span className="outline-text">What they</span>

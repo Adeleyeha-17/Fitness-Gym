@@ -1,8 +1,10 @@
 import {Header} from "./Header";
 import { motion } from "framer-motion";
+// import { CountUp } from 'react-countup';
 
 export const Hero = () => {
    const transition = {type: 'spring', duration: 3}
+
    return (
       <div className="hero" id="header">
          <div className="blur blur-hero"></div>
@@ -48,15 +50,17 @@ export const Hero = () => {
 
             <div className="member-figures">
                <div>
-                  <span>+140</span>
+                  <span>+40
+                  </span>
                   <span>Expert Coaches</span>
                </div>
                <div>
-                  <span>+978</span>
+                  <span>+978
+                  </span>
                   <span>Members joined</span>
                </div>
                <div>
-                  <span>+50</span>
+                  <span>+80</span>
                   <span>Fitness Program</span>
                </div>
             </div>
@@ -97,7 +101,8 @@ export const Hero = () => {
             <motion.img 
                initial = {{ right: "11rem"}}
                whileInView = {{right: "23rem"}}
-               transition ={{...transition}} src="hero_image_back.png" alt="" className="hero-img-bg"/> {/* Calories Card */}
+               transition ={{...transition}} src="hero_image_back.png" alt="" className="hero-img-bg"/> 
+               {/* Calories Card */}
             
             <motion.div 
             initial = {{ right: "37rem"}}

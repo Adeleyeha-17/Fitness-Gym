@@ -1,8 +1,9 @@
 import { useState } from "react";
+import {Link} from "react-scroll"
 
 
 export const Header = () => {
-   const mobileScreen = window.innerWidth <= "768" ? true : false;
+   const mobileScreen = window.innerWidth <= 768 ? true : false;
    const [openMenu, setOpenMenu] = useState(false)
    return (
       <div className="header">
@@ -22,10 +23,30 @@ export const Header = () => {
    spy={true}
    smooth ={true}>Home</Link>
    </li>
-<li onClick={() => setOpenMenu(false)}>Programs</li>
-<li onClick={() => setOpenMenu(false)}>Plans</li>
-<li onClick={() => setOpenMenu(false)}>Testimonial</li>
-<li onClick={() => setOpenMenu(false)}>Why us</li>
+<li>
+<Link onClick={() => setOpenMenu(false)}
+   to = "programs"
+   spy={true}
+   smooth ={true}>Program</Link>
+</li>
+<li>
+<Link onClick={() => setOpenMenu(false)}
+   to = "reasons"
+   spy={true}
+   smooth ={true}>Why us</Link>
+</li>
+<li>
+<Link onClick={() => setOpenMenu(false)}
+   to = "plan"
+   spy={true}
+   smooth ={true}>Plan</Link>
+</li>
+<li>
+<Link onClick={() => setOpenMenu(false)}
+   to = "testimonial"
+   spy={true}
+   smooth ={true}>Testimonial</Link>
+</li>
 </ul>}
 </div>
       </div>
