@@ -1,9 +1,36 @@
 /* eslint-disable react/jsx-key */
 import data from "../data/plansData"
-import {PlansCard} from "./PlansCard"
 
 export const Plans = () => {
-   const plansCard = data.map(items => <PlansCard item={items}/>)
+   const plansCard = data.map(items => <div className="plan-card">
+      <img src={
+            items.icon
+         }
+         alt=""
+         className="plan-icons"/>
+      <span>{
+         items.name
+      }</span>
+      <span>${
+         items.price
+      }</span>
+
+      <div className="features">
+         {
+         items.features.map((feature, index) => (
+            <div key={index}>
+               <img src="whiteTick.png" alt=""/>
+               <span>{feature}</span>
+            </div>
+         ))
+      } </div>
+
+      <span>See more benefits</span>
+
+      <div className="hero-btns plan-btn">
+         <a href="#">Join Now</a>
+      </div>
+   </div>)
 
    return (
       <div className="plans-container" id="plan">
@@ -16,8 +43,9 @@ export const Plans = () => {
 
          {/* Plans Cards */}
          <div className="plans-card">
-            {plansCard} </div>
-            <div className="blur blur-plans-2"></div>
+            {plansCard}
+         </div>
+         <div className="blur blur-plans-2"></div>
       </div>
    )
 }
