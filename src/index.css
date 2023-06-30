@@ -755,6 +755,12 @@
    gap: 1rem;
 }
 
+.join-form button {
+   border: none;
+   background: transparent;
+   color: white;
+}
+
 .left-j hr {
    position: absolute;
    top: -2rem;

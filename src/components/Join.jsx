@@ -1,7 +1,16 @@
-import { useRef } from "react"
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const Join = () => {
-   const form = useRef()
+   
+   const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_fnlyk4i', 'template_fn6hk1h', form.current, 'zACzMzsFyBJCvFwsk')
+      e.target.reset()
+  };
   return (
     <div className="join" id="join-us">
       <div className="left-j">
@@ -16,10 +25,10 @@ export const Join = () => {
             </div>
       </div>
       <div className="right-j">
-         <form ref={form} className="join-form">
+         <form ref={form} onSubmit={sendEmail} className="join-form">
             <input type="text" name="email" placeholder="Enter email"/>
             <div className="btn-div">
-            <a className="btn join-btn">Join now</a>
+            <button type='submit' className="btn join-btn">Join now</button>
             </div>
          </form>
       </div>
